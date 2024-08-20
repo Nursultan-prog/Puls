@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "header.css",
+	"sources": [
+		"../../sass/block/header.sass"
+	],
+	"sourcesContent": [
+		".header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    &__logo {\n        width: 250px;\n        img {\n            width: 100%; } } }\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CAIO;;;AAHzB,AAAD,aAAO,CAAC;EACJ,KAAK,EAAE,KAAK;CAEQ;;;AAHvB,AAEG,aAFG,CAEH,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;CAAG"
+}

@@ -1,0 +1,9 @@
+@import url(base/variables);
+@import url(block/promo);
+/* line 3, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/style.sass */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

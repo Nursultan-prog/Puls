@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../../sass/block/style.sass"
+	],
+	"sourcesContent": [
+		"@import url(base/variables);\n@import url(block/promo);\n.container {\n    max-width: 950px;\n    margin: 0 auto; }\n"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAC,mBAAI;AACZ,OAAO,CAAC,gBAAI;;AACZ,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;CAAG"
+}

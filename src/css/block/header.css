@@ -1,0 +1,18 @@
+/* line 1, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/header.sass */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/header.sass */
+.header__logo {
+  width: 250px;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/header.sass */
+.header__logo img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=header.css.map */
