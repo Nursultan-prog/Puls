@@ -143,7 +143,30 @@
   margin-top: 68px;
 }
 
-/* line 5, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/style.sass */
+/* line 1, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_advantages.sass */
+.advantages {
+  min-height: 475px;
+  padding: 70px 0 76px 0;
+  background: #f6f6f6;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_advantages.sass */
+.advantages__header {
+  text-align: center;
+  color: #0d0d0d;
+  font-family: 'MuseoSansCyrl-700';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_advantages.sass */
+.advantages__block {
+  display: flex;
+  width: 275px;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/style.sass */
 .container {
   max-width: 950px;
   margin: 0 auto;
