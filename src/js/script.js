@@ -3,7 +3,17 @@ $(document).ready(function(){
         speed: 1200,
         adaptiveHeight: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/leftarrow.png" alt="arrow"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/rightarrow.png" alt="arrow"></button>'
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/rightarrow.png" alt="arrow"></button>',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              dots: true, 
+              arrows: false
+            }
+          }
+        ]
+          
     });
   });
 // var name = "Ivan"; 
