@@ -30,7 +30,7 @@
         cursor: pointer
         transition: 0.5s all
         &:hover
-            box-shadow: 2px 2px 20px rgb(107, 107, 107)
+            box-shadow: 2px 2px 20px rgb(199, 1, 1)
             border: none
         div
             transform: skewX(25deg)
@@ -40,14 +40,18 @@
             border: none
     &__content
         margin-top: 60px
-        display: flex
-        width: 303px
+        display: none
         justify-content: space-between
+        flex-wrap: wrap 
+        &_active
+            display: flex 
     &-item 
         width: 303px
         min-height: 442px
         border: 2px solid rgb(232, 232, 232)
         padding: 20px 20px 20px 20px 
+        overflow: hidden
+        margin-bottom: 20px
         &__img
             display: block
             margin: 0 auto
@@ -73,6 +77,8 @@
             font-family: 'MuseoSansCyrl-500'
             font-size: 14px
             text-align: center
+            &:hover
+                color: #8B0000
         hr
             background: rgb(232, 232, 232)
             margin-top: 17px
@@ -92,5 +98,57 @@
             font-family: 'MuseoSansCyrl-700'
             font-size: 20px
             text-align: left
-                            
+        &__wrapper
+            display: flex
+            width: calc(200% +  60px)
+        &__content
+           width: 50% 
+           margin-right: 0px
+           transform: translateX(-100%)
+           transition: 0.5s all
+           &_active
+            transform: translateX(0%)
+            margin-right: 20px
+        &__list
+            position: relative
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            transition: 0.5s all
+            padding-left: 35px
+            margin-bottom: 0
+            list-style-type: none
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0
+                margin-right: 20px
+            li
+                position: relative
+                color: rgb(85, 85, 85)
+                font-family: 'MuseoSansCyrl-300'
+                font-size: 14px
+                line-height: 21px
+                margin-bottom: 20px
+                &:before
+                    content: ""
+                    position: absolute
+                    width: 5px
+                    height: 5px 
+                    background-color: rgb(199, 1, 1)
+                    left: -14px
+                    top: 7px
+        &__back
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(calc(-50% - 19px))
+            display: block
+            color: #c70101
+            font-family: 'MuseoSansCyrl-500'
+            font-size: 14px
+            text-decoration: underline
+            text-transform: uppercase
+            &:hover
+                color: #8B0000
+                    
 
