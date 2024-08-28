@@ -557,26 +557,27 @@
 .client__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0 20px 0 20px;
 }
 
-/* line 13, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
+/* line 14, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
 .client__block {
   display: flex;
   margin-top: 60px;
 }
 
-/* line 16, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
+/* line 17, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
 .client__block img {
   max-height: 169px;
   max-width: 169px;
 }
 
-/* line 19, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
+/* line 20, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
 .client__text {
   margin-left: 60px;
 }
 
-/* line 21, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
+/* line 22, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
 .client__name {
   color: #0d0d0d;
   font-family: 'MuseoSansCyrl-700';
@@ -584,7 +585,7 @@
   line-height: 18px;
 }
 
-/* line 26, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
+/* line 27, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
 .client__result {
   color: #646464;
   font-family: 'MuseoSansCyrl-500';
@@ -593,7 +594,7 @@
   margin-bottom: 10px;
 }
 
-/* line 32, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
+/* line 33, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/block/_client.sass */
 .client__descr {
   color: #0d0d0d;
   font-family: 'MuseoSansCyrl-300';
@@ -616,86 +617,135 @@
   .consultation__wrapper {
     padding: 0 0 0 20px;
   }
+  /* line 15, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .catalog__content {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 20, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .carousel__inner {
+    width: 520px;
+  }
+  /* line 23, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .carousel div img {
+    width: 500px;
+  }
+  /* line 26, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .catalog__tab {
+    width: 170px;
+  }
+  /* line 29, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .client__text {
+    margin-left: 30px;
+  }
 }
 
 @media (max-width: 575px) {
-  /* line 18, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 33, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .advantages__header {
+    font-size: 25px;
+  }
+  /* line 35, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .advantages__wrapper {
     flex-direction: column;
     align-items: center;
   }
-  /* line 21, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 38, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .header {
     flex-direction: column;
   }
-  /* line 23, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 40, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .header__official {
     display: none;
   }
-  /* line 25, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 42, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .header__contacts {
     margin-top: 30px;
     align-items: center;
   }
-  /* line 28, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 45, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .button {
     width: 220px;
     height: 50px;
   }
-  /* line 32, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 49, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .promo__wrapper {
     align-items: center;
     padding: 0;
   }
-  /* line 35, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 52, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .promo__icons {
     width: 310px;
     flex-direction: column;
     align-items: center;
   }
-  /* line 39, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 56, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .promo__icon {
     margin-top: 20px;
   }
-  /* line 41, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 58, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .promo__header {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 45px;
     text-align: center;
   }
-  /* line 45, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 62, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .promo__subheader {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
-  /* line 49, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 66, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .consultation__header {
     text-align: center;
-    font-size: 33px;
+    font-size: 30px;
   }
-  /* line 52, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 69, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .consultation__subheader {
     text-align: center;
   }
-  /* line 54, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
-  .consultation__wrapper {
-    align-items: center;
-  }
-  /* line 57, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 72, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .button_submit {
     width: 280px;
   }
-  /* line 60, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 75, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .feed-form__input {
     width: 280px;
   }
-  /* line 63, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 78, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .carousel__inner {
     width: 320px;
   }
-  /* line 66, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  /* line 81, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
   .carousel div img {
     width: 300px;
+  }
+  /* line 84, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .catalog__header {
+    font-size: 25px;
+  }
+  /* line 86, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .catalog__tab {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  /* line 89, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .catalog__tabs {
+    flex-direction: column;
+  }
+  /* line 92, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .client__header {
+    font-size: 25px;
+  }
+  /* line 94, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .client__block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 97, ../../../../../../../../../../../../../Users/nursultannurulla/Desktop/Pulsproject/src/sass/base/_media.sass */
+  .client__text {
+    margin-top: 20px;
   }
 }
 
