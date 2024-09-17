@@ -4,6 +4,17 @@
         position: relative
         width: 750px
         margin: 0 auto 
+        .slick-dots
+            position: relative
+            list-style: none
+            li
+                position: absolute
+                &:nth-last-child(1)
+                    left: 275px
+                &:nth-last-child(2)
+                    left: 150px
+                &:nth-last-child(3)
+                    left: 20px
     .slick-prev,.slick-next
         position: absolute
         top: 50%
@@ -17,3 +28,4 @@
     .slick-next
         right: -66px
         left: auto
+    

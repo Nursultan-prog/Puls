@@ -16,6 +16,7 @@ $(document).ready(function(){
           
     });
 
+    // tab-menu
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
       $(this)
         .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -35,6 +36,86 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    //modal
+    $('[data-modal=consultation]').on('click',function(){
+      $('.overlay, #consultation').fadeIn('slow');
+
+    });
+    $('.modal__close').on('click', function(){
+      $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+
+    $('.button_mini').on('click', function(){
+      $('.overlay, #order').fadeIn('slow');
+    });
+
+    $('.button_mini').each(function(i){
+      $(this).on('click',function(){
+        $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+        $('.overlay, #order').fadeIn('slow');
+      })
+    });
+
+    // Validate-form
+    function valideForms(form){
+      $(form).validate({
+        rules:{
+          name: "required",
+          phone: "required",
+          email:{
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Пожалуйста, введите свое имя",
+          phone: "Пожалуйста, введите свой номер телефона",
+          email: {
+            required: "Пожалуйста, введите свою почту",
+            email: "Неправильно введен адрес почты"
+          }
+        }
+      });
+    };
+
+    valideForms('#consultation-form')
+    valideForms('#consultation form')
+    valideForms('#order form');
+
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    $('form').submit(function(e){
+      e.preventDefault();
+
+      if (!$(this).valid()){
+        return;
+      }
+      $.ajax({
+        type:"POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function(){
+        $(this).find("input").val("");
+
+
+        $('form').trigger('reset');
+      });
+      return false;
+    });
+
+
+    $(window).scroll(function(){
+      if($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+      } else {
+        $('.pageup').fadeOut();
+      }
+    });
+
+    new WOW().init(); 
+
   });
 // var name = "Ivan";  
 // let age = 21;  
